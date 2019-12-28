@@ -6,6 +6,9 @@
     # Création de clé
     ssh-keygen -t rsa -b 4096 -C "mon_adresse@example.com"
 
+    # Gestion des problèmes de droit sur les fichiers
+    chmod 600 adresse_dossier_ssh/*
+
     # Ajout de la clé au SSH agent
     ssh-add adresse_dossier_ssh/nom_de_la_clé
     ```
@@ -55,13 +58,7 @@
     IdentityFile /c/Users/USERNAME/.ssh/id_rsa_pro
     ```
 
-3. Puis il faut s'assurer qu'il n'y a pas de problème de droit avec les fichiers
-
-    ```sh
-    chmod 600 adresse_dossier_ssh/*
-    ```
-
-4. Il faut enfin ajouter les identifiants aux différent projets (sauf ceux de la clé par défaut). Pour ça il faut modifier l'adresse du dépôt en y ajoutant l'identifiant
+3. Il faut enfin ajouter les identifiants aux différent projets (sauf ceux de la clé par défaut). Pour ça il faut modifier l'adresse du dépôt en y ajoutant l'identifiant
 
     ```sh
     #### VERSION LINUX ####
