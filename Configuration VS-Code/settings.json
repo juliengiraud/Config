@@ -1,60 +1,83 @@
-{ // Linux Windows
-    "code-runner.saveAllFilesBeforeRun": true, // Linux Windows
-    "code-runner.executorMap": { // Linux Windows
-        "javascript": "node", // Linux
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt", // Linux
-        "c": "cd $dir && make && make run", // Linux
-        "cpp": "cd $dir && make && make run", // Linux
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt", // Linux
-        "php": "php", // Linux
-        "python": "python3 -u", // Linux
-        "perl": "perl", // Linux
-        "perl6": "perl6", // Linux
-        "ruby": "ruby", // Linux
-        "go": "go run", // Linux
-        "lua": "lua", // Linux
-        "groovy": "groovy", // Linux
-        "powershell": "powershell -ExecutionPolicy ByPass -File", // Linux
-        "bat": "cmd /c", // Linux
-        "shellscript": "bash", // Linux
-        "fsharp": "fsi", // Linux
-        "csharp": "scriptcs", // Linux
-        "vbscript": "cscript //Nologo", // Linux
-        "typescript": "ts-node", // Linux
-        "coffeescript": "coffee", // Linux
-        "scala": "scala", // Linux
-        "swift": "swift", // Linux
-        "julia": "julia", // Linux
-        "crystal": "crystal", // Linux
-        "ocaml": "ocaml", // Linux
-        "r": "Rscript", // Linux
-        "applescript": "osascript", // Linux
-        "clojure": "lein exec", // Linux
-        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt", // Linux
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt", // Linux
-        "racket": "racket", // Linux
-        "ahk": "autohotkey", // Linux
-        "autoit": "autoit3", // Linux
-        "dart": "dart", // Linux
-        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt", // Linux
-        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt", // Linux
-        "haskell": "runhaskell", // Linux
-        "nim": "nim compile --verbosity:0 --hints:off --run" // Linux
-    }, // Linux Windows
-    "editor.acceptSuggestionOnEnter": "on", // Linux Windows
-    "editor.detectIndentation": false, // Linux Windows
-    "editor.minimap.enabled": true, // Linux Windows
-    "editor.quickSuggestions": false, // Linux Windows
-    "editor.quickSuggestionsDelay": 5, // Linux Windows
-    "editor.renderLineHighlight": "gutter", // Linux Windows
-    "editor.wordWrap": "on", // Linux Windows
-    "extensions.ignoreRecommendations": true, // Linux Windows
-    "php.validate.executablePath": "/usr/bin/php", // Linux Windows
-    "python.linting.pylintEnabled": false, // Linux Windows
-    "python.pythonPath": "/usr/bin/python3", // Linux Windows
-    "workbench.colorTheme": "One Dark Pro",
-    "java.errors.incompleteClasspath.severity": "ignore", // Linux Windows
-    "files.associations": { // Linux Windows
-        "*.gs": "javascript" // Linux Windows
-    } // Linux Windows
-} // Linux Windows
+{
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && make && make run",
+        "cpp": "cd $dir && make && make run",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "cd $dir && python3 -u $fileName",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run"
+    },
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.minimap.enabled": true,
+    "editor.quickSuggestions": true,
+    "editor.quickSuggestionsDelay": 5,
+    "editor.renderLineHighlight": "gutter",
+    "editor.wordWrap": "on",
+    "php.validate.executablePath": "/usr/bin/php",
+    "python.linting.pylintEnabled": false,
+    "workbench.colorTheme": "Dracula",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "files.associations": {
+        "*.gs": "javascript"
+    },
+    "workbench.startupEditor": "none",
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "html.format.endWithNewline": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+    "java.refactor.renameFromFileExplorer": "autoApply",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.languageServer": "Microsoft"
+}
